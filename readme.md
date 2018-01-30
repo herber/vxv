@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  [![Build Status](https://travis-ci.org/herber/vxv.svg?branch=master)](https://travis-ci.org/herber/vxv)
-  [![VXV](https://img.shields.io/npm/v/vxv.svg)](https://npm.im/vxv)
+  <a href="https://travis-ci.org/herber/vxv"><img src="https://travis-ci.org/herber/vxv.svg?branch=master" alt="Build Status"></a>
+  <a href="https://npm.im/vxv"><img src="https://img.shields.io/npm/v/vxv.svg" alt="vxv"></a>
 </p>
 
 <p align="center">
