@@ -1,0 +1,47 @@
+{
+	"name": "vxv",
+	"version": "2.0.0",
+	"description": "Tiny css in js library",
+	"license": "MIT",
+	"repository": "herber/vxv",
+	"author": {
+		"name": "Tobias Herber",
+		"email": "tobihrbr@gmail.com",
+		"url": "tobihrbr.com"
+	},
+	"source": "index.js",
+  "main": "dist/vxv.js",
+	"module": "dist/vxv.m.js",
+  "browser": "dist/vxv.umd.js",
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "formatted && ava",
+		"build": "microbundle --output ./dist",
+    "dev": "microbundle watch --output ./dist"
+	},
+	"files": [
+		"index.js",
+		"dist"
+	],
+	"keywords": [
+		"vxv",
+		"stylis",
+		"insert",
+		"css",
+		"insert-ss",
+		"styles",
+		"css",
+		"in",
+		"js"
+	],
+	"dependencies": {
+		"insert-css": "^2.0.0",
+		"stylis": "^3.4.8"
+	},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"formatted": "^1.0.0"
+	}
+}
