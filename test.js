@@ -42,7 +42,7 @@ h1 {
 test('return a class', t => {
   const c = m(styles);
 
-  t.is(c, `.vxv_${hash(styles)}`);
+  t.is(c, `vxv_${hash(styles)}`);
 });
 
 test('hashes strings', t => {
