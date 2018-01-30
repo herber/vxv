@@ -32,5 +32,5 @@ module.exports = str => {
 
   insert(styles);
 
-  return `.vxv_${h}`;
+  return `vxv_${h}`;
 };
