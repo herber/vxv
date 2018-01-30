@@ -10,7 +10,7 @@
 <p align="center">
   A tiny library for writing native css code in JavaScript.
 
-  __VXV__ is powered by [`stylis`](https://github.com/thysultan/stylis.js) and [`insert-css`](https://github.com/substack/insert-css).
+  <b>VXV</b> is powered by <a href="https://github.com/thysultan/stylis.js">stylis</a> and <a href="https://github.com/substack/insert-css">insert-css</a>.
 </p>
 
 ## Features
