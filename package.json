@@ -10,16 +10,16 @@
 		"url": "tobihrbr.com"
 	},
 	"source": "index.js",
-  "main": "dist/vxv.js",
+	"main": "dist/vxv.js",
 	"module": "dist/vxv.m.js",
-  "browser": "dist/vxv.umd.js",
+	"browser": "dist/vxv.umd.js",
 	"engines": {
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "formatted && ava",
+		"test": "formatted && jest",
 		"build": "microbundle --output ./dist",
-    "dev": "microbundle watch --output ./dist"
+		"dev": "microbundle watch --output ./dist"
 	},
 	"files": [
 		"index.js",
@@ -34,14 +34,27 @@
 		"styles",
 		"css",
 		"in",
-		"js"
+		"js",
+		"html",
+		"style",
+		"css-in-js",
+		"styesheets"
 	],
 	"dependencies": {
+		"codecov": "^3.0.0",
 		"insert-css": "^2.0.0",
 		"stylis": "^3.4.8"
 	},
 	"devDependencies": {
-		"ava": "^0.20.0",
-		"formatted": "^1.0.0"
+		"formatted": "^1.0.0",
+		"jest": "^22.1.4"
+	},
+	"jest": {
+		"collectCoverage": true,
+		"coverageDirectory": "./coverage",
+		"coverageReporters": [
+			"lcov",
+			"text"
+		]
 	}
 }
