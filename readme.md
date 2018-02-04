@@ -5,6 +5,7 @@
 <p align="center">
   <a href="https://travis-ci.org/herber/vxv"><img src="https://travis-ci.org/herber/vxv.svg?branch=master" alt="Build Status"></a>
   <a href="https://npm.im/vxv"><img src="https://img.shields.io/npm/v/vxv.svg" alt="vxv"></a>
+  <a href="https://codecov.io/gh/herber/vxv"><img src="https://codecov.io/gh/herber/vxv/branch/master/graph/badge.svg" /></a>
 </p>
 
 <p align="center">
