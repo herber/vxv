@@ -56,24 +56,22 @@ document.body.appendChild(element);
 
 ## Dynamic styles
 
-__VXV__ does not support variables in styles. However you can use the inline `style` attribute for dynamic styles. This makes you code even more explicit.
-
 ```js
 const vxv = require('vxv');
 const xou = require('xou');
+
+const color = 'blue';
 
 const styles = vxv`
 font-family: sans-serif;
 
 & h1 {
-  color: red;
+  color: ${ color };
 }
 `;
 
-const color = 'blue';
-
 const element = xou`<div class="${ styles }">
-  <h1 style="color: ${ color }">Dynamic</h1>
+  <h1>I am blue</h1>
 </div>`;
 ```
 

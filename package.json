@@ -1,6 +1,6 @@
 {
 	"name": "vxv",
-	"version": "2.2.0",
+	"version": "2.3.0",
 	"description": "Tiny css in js library",
 	"license": "MIT",
 	"repository": "herber/vxv",
@@ -41,11 +41,12 @@
 		"styesheets"
 	],
 	"dependencies": {
-		"codecov": "^3.0.0",
+		"assemble-template": "^1.0.0",
 		"insert-css": "^2.0.0",
 		"stylis": "^3.4.8"
 	},
 	"devDependencies": {
+		"codecov": "^3.0.0",
 		"formatted": "^1.0.0",
 		"jest": "^22.1.4"
 	},

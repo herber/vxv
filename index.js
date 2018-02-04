@@ -1,5 +1,6 @@
 const insertCss = require('insert-css');
 const stylis = require('stylis');
+const assembleTemplate = require('assemble-template');
 
 const hash = str => {
   let h = 0;
@@ -22,10 +23,9 @@ const insert = styles => {
   }
 };
 
-module.exports = str => {
-  if (typeof str == 'object') {
-    str = str[0];
-  }
+module.exports = (strings, ...values) => {
+  strings = Array.isArray(strings) ? strings : [strings];
+  let str = assembleTemplate(strings, ...values);
 
   const h = hash(str);
   const styles = stylis(`.vxv_${h}`, str);

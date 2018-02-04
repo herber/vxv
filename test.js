@@ -39,15 +39,17 @@ h1 {
 }`;
 
 test('return a class', () => {
+  const val = 'unicode 🦄';
   const c1 = vxv(styles);
   const c2 = vxv([styles]);
+  const c3 = vxv`A ${val}`;
 
   expect(c1).toBe(`vxv_${hash(styles)}`);
   expect(c2).toBe(`vxv_${hash(styles)}`);
+  expect(c3).toBe(`vxv_1086155160`);
 });
 
 test('hashes strings', () => {
-  console.log(vxv.hash);
   const str1 = vxv.hash(`A unicode 🦄`);
   const str2 = vxv.hash('');
 
