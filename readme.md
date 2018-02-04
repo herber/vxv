@@ -95,7 +95,7 @@ vxv`
 
 ## Styling global elements
 
-Global elements can either be tagged by the `global` statement, or not at all.
+Global elements have to be tagged by the `global` statement.
 
 ```js
 const vxv = require('vxv');
@@ -104,12 +104,6 @@ vxv`
 :global(body) {
   background: red;
 }
-
-h1 {
-  color: green;
-}
-
-// both of select global elements
 `;
 ```
 
