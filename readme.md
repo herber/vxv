@@ -76,6 +76,24 @@ const element = xou`<div class="${ styles }">
 </div>`;
 ```
 
+## Styling subelements
+
+Subelements have to be suffixed by an `&`.
+
+```js
+const vxv = require('vxv');
+
+vxv`
+& p {
+  text-align: center;
+
+  &.red {
+    color: red;
+  }
+}
+`;
+```
+
 ## Styling global elements
 
 Global elements can either be tagged by the `global` statement, or not at all.
