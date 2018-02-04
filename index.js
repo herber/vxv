@@ -2,9 +2,9 @@ const insertCss = require('insert-css');
 const stylis = require('stylis');
 
 const hash = str => {
-  let h = 0,
-    l = str.length,
-    i = 0;
+  let h = 0;
+  let l = str.length;
+  let i = 0;
 
   if (l > 0) {
     while (i < l) {
@@ -34,3 +34,5 @@ module.exports = str => {
 
   return `vxv_${h}`;
 };
+
+module.exports.hash = hash;
