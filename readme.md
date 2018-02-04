@@ -16,7 +16,7 @@
   - Powered by __tagged template literals__
   - __Isomorphic__: VXV works in node and in browsers
   - __Namespaced__: Don't worry about IDs or classes
-  - __Modular__: Import css from other files
+  - __Modular__: Import css from js files
 
 ## Install
 
