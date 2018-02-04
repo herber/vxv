@@ -91,6 +91,8 @@ vxv`
 h1 {
   color: green;
 }
+
+// both of select global elements
 `;
 ```
 
