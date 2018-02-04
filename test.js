@@ -39,9 +39,11 @@ h1 {
 }`;
 
 test('return a class', () => {
-  const c = vxv(styles);
+  const c1 = vxv(styles);
+  const c2 = vxv([styles]);
 
-  expect(c).toBe(`vxv_${hash(styles)}`);
+  expect(c1).toBe(`vxv_${hash(styles)}`);
+  expect(c2).toBe(`vxv_${hash(styles)}`);
 });
 
 test('hashes strings', () => {
