@@ -1,5 +1,4 @@
-import test from 'ava';
-import m from '.';
+const vxv = require('./');
 
 const hash = str => {
   let h = 0,
@@ -39,14 +38,17 @@ h1 {
   margin: 0.67em 0;
 }`;
 
-test('return a class', t => {
-  const c = m(styles);
+test('return a class', () => {
+  const c = vxv(styles);
 
-  t.is(c, `vxv_${hash(styles)}`);
+  expect(c).toBe(`vxv_${hash(styles)}`);
 });
 
-test('hashes strings', t => {
-  const str = hash(`A unicode 🦄`);
+test('hashes strings', () => {
+  console.log(vxv.hash);
+  const str1 = vxv.hash(`A unicode 🦄`);
+  const str2 = vxv.hash('');
 
-  t.is(str, 1086155160);
+  expect(str1).toBe(1086155160);
+  expect(str2).toBe(0);
 });
