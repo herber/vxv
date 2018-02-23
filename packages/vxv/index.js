@@ -1,4 +1,3 @@
-const stylis = require('stylis');
 const assembleTemplate = require('assemble-template');
 
 const hash = require('vxv-hash');

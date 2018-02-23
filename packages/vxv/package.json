@@ -41,7 +41,6 @@
 	],
 	"dependencies": {
 		"assemble-template": "^1.0.0",
-		"stylis": "^3.4.8",
 		"vxv-hash": "^3.0.0",
 		"vxv-insert": "^3.0.0",
 		"vxv-parser": "^3.0.0",
