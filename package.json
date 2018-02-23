@@ -39,7 +39,8 @@
 			"packages/vxv/index.js": false,
 			"packages/vxv-hash/dist/vxv-hash.js": false,
 			"packages/vxv-parser/dist/vxv-parser.js": false,
-      "packages/vxv-state/dist/vxv-state.js": false
+			"packages/vxv-state/dist/vxv-state.js": false,
+			"packages/vxv-server/index.js": false
    	}
 	},
 	"formatted": {
