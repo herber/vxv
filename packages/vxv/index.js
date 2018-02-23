@@ -12,7 +12,7 @@ const vxv = (strings, ...values) => {
   const h = hash(str);
   const styles = parser(`.vxv_${h}`, str);
 
-  state.set(h, str);
+  state.set(h, styles);
   insert(styles);
 
   return `vxv_${h}`;
