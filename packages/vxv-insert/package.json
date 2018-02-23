@@ -1,6 +1,6 @@
 {
 	"name": "vxv-insert",
-	"version": "1.0.0",
+	"version": "3.0.0",
 	"description": "Insert styles for vxv",
 	"license": "MIT",
 	"repository": "herber/vxv",
@@ -34,8 +34,6 @@
 		"style",
 		"inline"
 	],
-	"dependencies": {
-	},
 	"devDependencies": {
 		"microbundle": "^0.4.4"
 	}

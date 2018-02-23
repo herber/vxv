@@ -1,6 +1,6 @@
 {
 	"name": "vxv-state",
-	"version": "1.0.0",
+	"version": "3.0.0",
 	"description": "State management for vxv",
 	"license": "MIT",
 	"repository": "herber/vxv",
@@ -28,8 +28,6 @@
 		"vxv",
 		"state"
 	],
-	"dependencies": {
-	},
 	"devDependencies": {
 		"microbundle": "^0.4.4"
 	}

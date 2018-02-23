@@ -1,6 +1,6 @@
 {
 	"name": "vxv-hash",
-	"version": "1.0.0",
+	"version": "3.0.0",
 	"description": "Hashing for vxv",
 	"license": "MIT",
 	"repository": "herber/vxv",
@@ -28,8 +28,6 @@
 		"vxv",
 		"hash"
 	],
-	"dependencies": {
-	},
 	"devDependencies": {
 		"microbundle": "^0.4.4"
 	}
