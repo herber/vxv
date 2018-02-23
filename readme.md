@@ -112,7 +112,7 @@ vxv`
 
 ## Monorepo
 
-This is a monorepo, which means that there are multiple node modules in a single git repository, all the modules are in `packages/`. Monorepos are used by many other oss projects including [babel](http://babeljs.io), [react](http://reactjs.org) and [meteor](meteor.com), [Learn why](https://github.com/babel/babel/blob/9f90b6f1405f80b432c6f20d18ca6c584cc1e6bb/doc/design/monorepo.md)
+This is a monorepo, which means that there are multiple node modules in a single git repository, all the modules are in `packages/`. Monorepos are used by many other oss projects including [babel](http://babeljs.io), [react](http://reactjs.org) and [meteor](meteor.com) - [Learn why](https://github.com/babel/babel/blob/9f90b6f1405f80b432c6f20d18ca6c584cc1e6bb/doc/design/monorepo.md).
 
 ## License
 
