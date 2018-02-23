@@ -9,15 +9,16 @@
 </p>
 
 <p align="center">
-  A tiny library for writing native css code in JavaScript.<br><b>VXV</b> is powered by <a href="https://github.com/thysultan/stylis.js">stylis</a> and <a href="https://github.com/substack/insert-css">insert-css</a>.
+  A tiny library for writing native css code in JavaScript.<br><b>VXV</b> is powered by <a href="https://github.com/thysultan/stylis.js">stylis</a>, a fast css preprocessor.
 </p>
 
 ## Features
   - __Tiny__: VXV does not bloat you bundle
   - Powered by __tagged template literals__
-  - __Isomorphic__: VXV works in node and in browsers
-  - __Namespaced__: Don't worry about IDs or classes
+  - __Namespaced__: VXV automatically namespaces your css
   - __Modular__: Import css from js files
+  - __Isomorphic__: VXV works in node and in browsers, this is great for server side rendering
+  - __Just CSS__: VXV does not force you to learn anything new, it's just good old css.
 
 ## Install
 
@@ -54,7 +55,9 @@ const element = xou`<div class="${ styles }">
 document.body.appendChild(element);
 ```
 
-## Dynamic styles
+### Dynamic styles
+
+You can use plain old JavaScript variables for dynamic styles. You could even build mixins using JavaScript functions.
 
 ```js
 const vxv = require('vxv');
@@ -75,7 +78,7 @@ const element = xou`<div class="${ styles }">
 </div>`;
 ```
 
-## Styling subelements
+### Styling subelements
 
 Subelements have to be suffixed by an `&`.
 
@@ -93,7 +96,7 @@ vxv`
 `;
 ```
 
-## Styling global elements
+### Styling global elements
 
 Global elements have to be tagged by the `global` statement.
 
@@ -106,6 +109,10 @@ vxv`
 }
 `;
 ```
+
+## Monorepo
+
+This is a monorepo, which means that there are multiple node modules in a single git repository, all the modules are in `packages/`. Monorepos are used by many other oss projects including [babel](http://babeljs.io), [react](http://reactjs.org) and [meteor](meteor.com), [Learn why](https://github.com/babel/babel/blob/9f90b6f1405f80b432c6f20d18ca6c584cc1e6bb/doc/design/monorepo.md)
 
 ## License
 
