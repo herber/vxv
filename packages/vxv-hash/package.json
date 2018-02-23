@@ -1,0 +1,36 @@
+{
+	"name": "vxv-hash",
+	"version": "1.0.0",
+	"description": "Hashing for vxv",
+	"license": "MIT",
+	"repository": "herber/vxv",
+	"author": {
+		"name": "Tobias Herber",
+		"email": "tobihrbr@gmail.com",
+		"url": "tobihrbr.com"
+	},
+	"source": "index.js",
+	"main": "dist/vxv-hash.js",
+	"module": "dist/vxv-hash.m.js",
+	"browser": "dist/vxv-hash.umd.js",
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"build": "microbundle --output ./dist",
+		"dev": "microbundle watch --output ./dist"
+	},
+	"files": [
+		"index.js",
+		"dist"
+	],
+	"keywords": [
+		"vxv",
+		"hash"
+	],
+	"dependencies": {
+	},
+	"devDependencies": {
+		"microbundle": "^0.4.4"
+	}
+}
