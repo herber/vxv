@@ -1,0 +1,30 @@
+{
+	"name": "vxv-server",
+	"version": "3.0.1",
+	"description": "Serverside rendering for vxv",
+	"license": "MIT",
+	"repository": "herber/vxv",
+	"author": {
+		"name": "Tobias Herber",
+		"email": "tobihrbr@gmail.com",
+		"url": "tobihrbr.com"
+	},
+	"main": "index.js",
+	"engines": {
+		"node": ">=8"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"vxv",
+		"server",
+		"ssr",
+		"render",
+		"side",
+		"server-side-rendering"
+	],
+	"dependencies": {
+		"vxv-state": "^3.0.0"
+	}
+}
