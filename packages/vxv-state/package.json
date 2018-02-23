@@ -1,0 +1,34 @@
+{
+	"name": "vxv-state",
+	"version": "3.0.0",
+	"description": "State management for vxv",
+	"license": "MIT",
+	"repository": "herber/vxv",
+	"author": {
+		"name": "Tobias Herber",
+		"email": "tobihrbr@gmail.com",
+		"url": "tobihrbr.com"
+	},
+	"source": "index.js",
+	"main": "dist/vxv-state.js",
+	"module": "dist/vxv-state.m.js",
+	"browser": "dist/vxv-state.umd.js",
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"build": "microbundle --output ./dist",
+		"dev": "microbundle watch --output ./dist"
+	},
+	"files": [
+		"index.js",
+		"dist"
+	],
+	"keywords": [
+		"vxv",
+		"state"
+	],
+	"devDependencies": {
+		"microbundle": "^0.4.4"
+	}
+}

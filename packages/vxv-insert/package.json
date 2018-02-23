@@ -1,0 +1,40 @@
+{
+	"name": "vxv-insert",
+	"version": "3.0.0",
+	"description": "Insert styles for vxv",
+	"license": "MIT",
+	"repository": "herber/vxv",
+	"author": {
+		"name": "Tobias Herber",
+		"email": "tobihrbr@gmail.com",
+		"url": "tobihrbr.com"
+	},
+	"source": "index.js",
+	"main": "dist/vxv-insert.js",
+	"module": "dist/vxv-insert.m.js",
+	"browser": "dist/vxv-insert.umd.js",
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"build": "microbundle --output ./dist",
+		"dev": "microbundle watch --output ./dist"
+	},
+	"files": [
+		"index.js",
+		"dist"
+	],
+	"keywords": [
+		"vxv",
+		"insert",
+		"head",
+		"html",
+		"document",
+		"styles",
+		"style",
+		"inline"
+	],
+	"devDependencies": {
+		"microbundle": "^0.4.4"
+	}
+}

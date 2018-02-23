@@ -1,5 +1,4 @@
 {
-	"name": "vxv",
 	"version": "2.3.0",
 	"description": "Tiny css in js library",
 	"license": "MIT",
@@ -9,46 +8,21 @@
 		"email": "tobihrbr@gmail.com",
 		"url": "tobihrbr.com"
 	},
-	"source": "index.js",
-	"main": "dist/vxv.js",
-	"module": "dist/vxv.m.js",
-	"browser": "dist/vxv.umd.js",
 	"engines": {
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "formatted && jest",
-		"build": "microbundle --output ./dist",
-		"dev": "microbundle watch --output ./dist"
-	},
-	"files": [
-		"index.js",
-		"dist"
-	],
-	"keywords": [
-		"vxv",
-		"stylis",
-		"insert",
-		"css",
-		"insert-ss",
-		"styles",
-		"css",
-		"in",
-		"js",
-		"html",
-		"style",
-		"css-in-js",
-		"styesheets"
-	],
-	"dependencies": {
-		"assemble-template": "^1.0.0",
-		"insert-css": "^2.0.0",
-		"stylis": "^3.4.8"
+		"test": "formatted && yarn build && jest",
+		"bootstrap": "lerna bootstrap",
+		"build": "yarn bootstrap && lerna run build",
+		"dev": "lerna run dev"
 	},
 	"devDependencies": {
 		"codecov": "^3.0.0",
 		"formatted": "^1.0.0",
-		"jest": "^22.1.4"
+		"jest": "^22.1.4",
+		"jsdom": "^11.6.2",
+		"lerna": "^2.5.1"
 	},
 	"jest": {
 		"collectCoverage": true,
@@ -56,6 +30,22 @@
 		"coverageReporters": [
 			"lcov",
 			"text"
+		],
+		"testMatch": [
+			"**/test/**"
+		],
+		"collectCoverageOnlyFrom": {
+			"packages/vxv-insert/index.js": false,
+			"packages/vxv/index.js": false,
+			"packages/vxv-hash/dist/vxv-hash.js": false,
+			"packages/vxv-parser/dist/vxv-parser.js": false,
+			"packages/vxv-state/dist/vxv-state.js": false,
+			"packages/vxv-server/index.js": false
+   	}
+	},
+	"formatted": {
+		"ignore": [
+			"**/node_modules/**"
 		]
 	}
 }

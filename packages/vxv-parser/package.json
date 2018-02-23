@@ -1,0 +1,41 @@
+{
+	"name": "vxv-parser",
+	"version": "3.0.0",
+	"description": "CSS parser for vxv",
+	"license": "MIT",
+	"repository": "herber/vxv",
+	"author": {
+		"name": "Tobias Herber",
+		"email": "tobihrbr@gmail.com",
+		"url": "tobihrbr.com"
+	},
+	"source": "index.js",
+	"main": "dist/vxv-parser.js",
+	"module": "dist/vxv-parser.m.js",
+	"browser": "dist/vxv-parser.umd.js",
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"build": "microbundle --output ./dist",
+		"dev": "microbundle watch --output ./dist"
+	},
+	"files": [
+		"index.js",
+		"dist"
+	],
+	"keywords": [
+		"vxv",
+		"css",
+		"parse",
+		"stylis",
+		"prefix",
+		"namespace"
+	],
+	"dependencies": {
+		"stylis": "^3.4.10"
+	},
+	"devDependencies": {
+		"microbundle": "^0.4.4"
+	}
+}
