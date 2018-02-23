@@ -15,14 +15,18 @@
 		"test": "formatted && yarn build && jest",
 		"bootstrap": "lerna bootstrap",
 		"build": "yarn bootstrap && lerna run build",
-		"dev": "lerna run dev"
+		"dev": "lerna run dev",
+		"site": "browserify site/index.js -o site/dist/bundle.js"
 	},
 	"devDependencies": {
+		"browserify": "^16.1.0",
 		"codecov": "^3.0.0",
 		"formatted": "^1.0.0",
 		"jest": "^22.1.4",
 		"jsdom": "^11.6.2",
-		"lerna": "^2.5.1"
+		"lerna": "^2.5.1",
+		"vxv": "^3.1.0",
+		"xou": "^1.0.0"
 	},
 	"jest": {
 		"collectCoverage": true,
@@ -41,7 +45,7 @@
 			"packages/vxv-parser/dist/vxv-parser.js": false,
 			"packages/vxv-state/dist/vxv-state.js": false,
 			"packages/vxv-server/index.js": false
-   	}
+		}
 	},
 	"formatted": {
 		"ignore": [
