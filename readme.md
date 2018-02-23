@@ -110,6 +110,38 @@ vxv`
 `;
 ```
 
+### Serverside rendering
+
+For serverside rendering you need the [`vxv-server`](https://github.com/herber/vxv/tree/master/packages/vxv-server) module.
+
+__VXV-Server__ processes your styles just like __VXV__ does including hash prefixing. `server()` will return a simple string containing all your styles - you can now save those styles somewhere or send them directly to the user.
+
+```js
+const vxv = require('vxv');
+const server = require('vxv-server');
+
+const mainStyles = vxv`
+h1 { font-size: 2rem }
+h2 { font-size: 1.5rem }
+h3 { font-size: 1.25rem }
+h4 { font-size: 1rem }
+h5 { font-size: .875rem }
+h6 { font-size: .75rem }
+`;
+
+const otherStyles = vxv`
+p, dl, ol, ul, pre, blockquote {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+`;
+
+server();
+// => All styles even those used in other files -
+// => prefixed and concatenated into single string,
+// => that you can use for serverside rendering.
+```
+
 ## Monorepo
 
 This is a monorepo, which means that there are multiple node modules in a single git repository, all the modules are in `packages/`. Monorepos are used by many other oss projects including [babel](http://babeljs.io), [react](http://reactjs.org) and [meteor](meteor.com) - [Learn why](https://github.com/babel/babel/blob/9f90b6f1405f80b432c6f20d18ca6c584cc1e6bb/doc/design/monorepo.md).
