@@ -1,12 +1,14 @@
-const insert = src => {
+const insert = (src, id) => {
   /* istanbul ignore else */
   if (typeof window == 'object') {
-    const styleElement = window.document.createElement('style');
-    styleElement.setAttribute('type', 'text/css');
-    styleElement.setAttribute('class', '_vxv_');
-    styleElement.innerHTML = src;
+    if (window.document.querySelector('._vxv_' + id) == null) {
+      const styleElement = window.document.createElement('style');
+      styleElement.setAttribute('type', 'text/css');
+      styleElement.setAttribute('class', '_vxv_ _vxv_' + id);
+      styleElement.innerHTML = src;
 
-    window.document.head.appendChild(styleElement);
+      window.document.head.appendChild(styleElement);
+    }
   }
 };
 
