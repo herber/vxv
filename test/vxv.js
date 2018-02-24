@@ -1,12 +1,19 @@
 const vxv = require('../packages/vxv/index.js');
+const RED = '#ff0000';
 
 test('works', () => {
+  const insert = vxv`
+    font-size: 2em;
+  `;
+
   const c1 = vxv`
+    ${insert}
+
     & p {
       text-align: center;
 
       &.red {
-        color: red;
+        color: ${RED};
       }
     }
   `;
