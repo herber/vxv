@@ -48,7 +48,8 @@ const mainStyles = css`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   max-width: 720px;
-  margin: 150px auto 100px auto;
+  margin: 100px auto 80px auto;
+  padding: 10px;
 
   & a {
     color: black;
@@ -121,7 +122,7 @@ server();
 
 const main = html`
   <section class="${mainStyles}">
-    <img src="https://i.imgur.com/R4GAGr8.png" />
+    <img src="logo.svg" />
     <p class="sub">
       A tiny library for writing native css code in JavaScript.<br><b>VXV</b> is powered by <a href="https://github.com/thysultan/stylis.js">stylis</a>, a fast css preprocessor.
     </p>
