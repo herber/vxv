@@ -1,5 +1,3 @@
-const assembleTemplate = require('assemble-template');
-
 const hash = require('vxv-hash');
 const insert = require('vxv-insert');
 const parser = require('vxv-parser');
@@ -27,9 +25,11 @@ const vxv = (strings, ...values) => {
   const styles = parser(`.vxv_${h}`, str);
 
   state.set(h, styles);
-  insert(styles);
+  insert(styles, h);
 
   return `vxv_${h}`;
 };
+
+vxv.state = state;
 
 module.exports = vxv;
