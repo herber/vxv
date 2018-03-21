@@ -1,6 +1,6 @@
 {
 	"name": "vxv",
-	"version": "3.1.4",
+	"version": "3.1.6",
 	"description": "Tiny css in js library",
 	"license": "MIT",
 	"repository": "herber/vxv",
@@ -41,8 +41,8 @@
 	],
 	"dependencies": {
 		"assemble-template": "^1.0.0",
-		"vxv-hash": "^3.1.4",
-		"vxv-insert": "^3.1.4",
+		"vxv-hash": "^3.1.6",
+		"vxv-insert": "^3.1.6",
 		"vxv-parser": "^3.0.0",
 		"vxv-state": "^3.0.0"
 	},
